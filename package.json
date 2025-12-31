@@ -1,18 +1,14 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "vedaa-ai-office-ch",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "backend": "echo '⚠️  Warning: Express backend is deprecated. Use Next.js API routes instead.' && nodemon server/index.js",
     "build": "next build",
-    "build:dev": "vite build --mode development",
-    "db:init": "node scripts/init-database.js",
-    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
-    "frontend": "vite",
+    "dev": "next dev",
+    "start": "next start",
     "lint": "next lint",
-    "preview": "vite preview",
-    "start": "next start"
+    "db:init": "node scripts/init-database.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
